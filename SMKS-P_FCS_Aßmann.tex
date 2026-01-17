@@ -1,0 +1,100 @@
+\documentclass[11pt]{scrreport}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage[ngerman] {babel}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx,float}
+\usepackage{booktabs}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{suffix}
+\usepackage{xstring}
+\usepackage[onehalfspacing]{setspace}
+\usepackage{chemformula}
+\usepackage[breaklinks,pdfpagelabels,hidelinks]{hyperref}%
+\usepackage[figure]{hypcap}
+\usepackage{cleveref}
+\usepackage[style=chem-angew,doi,chaptertitle,articletitle]{biblatex}
+\usepackage{chemfig}
+\usepackage[right=2.5cm, left=2.5cm, top=2.5cm, bottom=2.5cm]{geometry}%,showframe
+\usepackage{ragged2e}
+\usepackage{caption}
+\usepackage[section]{placeins}
+\usepackage{colortbl}
+\usepackage{float}
+\usepackage{mathtools}
+\usepackage{multirow}
+\usepackage{siunitx}
+\sisetup{detect-all, locale = DE}
+\usepackage[useregional]{datetime2}
+\usepackage[nopostdot,style=super,acronyms,nonumberlist,toc]{glossaries-extra}
+\usepackage{tikz}
+\usepackage{datatool}
+\usepackage{csquotes}
+\usepackage[list=true]{subcaption}
+\setcounter{tocdepth}{4}
+\setcounter{secnumdepth}{4}
+\renewcommand{\familydefault}{\sfdefault}
+\addbibresource{FCS.bib}
+\let\cite=\supercite
+\numberwithin{equation}{chapter}
+\addto{\captionsgerman}{\renewcommand*{\contentsname}{Inhaltsverzeichnis}}
+
+
+\DefineBibliographyExtras{german}{%
+	\DeclareBibstringSet{latin}{andothers,ibidem}%
+	\DeclareBibstringSetFormat{latin}{\mkbibemph{#1}}%
+}
+\UndefineBibliographyExtras{german}{%
+	\UndeclareBibstringSet{latin}%
+}
+\DefineBibliographyStrings{german}{%
+	andothers = {et al\adddot},
+}
+\renewcommand\mkbibnamefamily[1]{\textsc{#1}}
+\raggedbottom
+\begin{document}
+	\begin{titlepage}
+		\setcounter{page}{0}
+		\centering
+		\includegraphics[width=0.6\textwidth]{"HHU_Logo_WortBildMarke.png"} 
+		\vfill
+		{\LARGE\bfseries Protokoll: Diffusionskonstante (Fluoreszenzkorrelationsspektroskopie) -- N} \\
+		\vfill
+		Mathematisch-Naturwissenschaftliche Fakultät\\
+		Heinrich Heine-Universität Düsseldorf\\
+		\vfill
+		für das Modul\\
+		Pflichtpraktikum Physikalische Chemie (SMKS-P)\\
+		im Wintersemester 2025/26
+		\vfill
+		Betreuende:r Assistent:in: Ralf Kühnemuth \& Suren Felekyan\\
+		Abgabedatum: \today
+		\vfill
+		von:\\
+		Lena-Marie Aßmann  \\
+		\href{mailto:lena-marie.assmann@hhu.de}{lena-marie.assmann@hhu.de}\\
+		Matrikelnr.: 3121504\\
+		\vfill
+	\end{titlepage}
+	\pagenumbering{Roman}
+	\setcounter{page}{1}
+	\tableofcontents
+	\newpage
+	\pagenumbering{arabic}
+	\chapter{Einleitung}
+	{\let\clearpage\relax\chapter{Experimentalteil}}
+	\section{Versuchsablauf}
+	Die bereitgestellten Proben wurden entsprechend des Skripts vermessen.\cite{Skript} 
+	\section{Messergebnisse \& Auswertung}
+	
+	\section{Diskussion \& Fehlerbetrachtung}
+	
+	\listoffigures
+	\addcontentsline{toc}{chapter}{Abbildungsverzeichnis}
+	{\let\clearpage\relax\listoftables}
+	\addcontentsline{toc}{chapter}{Tabellenverzeichnis}
+	{\let\clearpage\relax\printbibliography}
+	\addcontentsline{toc}{chapter}{Literatur}
+\end{document}
