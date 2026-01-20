@@ -94,10 +94,36 @@
 	durchgeführt.
 	\begin{equation}
 	\begin{split}
-		G(t_c)&=1+\frac{1}{N_{eff}}[x_1(\frac{1}{1+\frac{t_c}{t_{D1}}})(\frac{1}{1+(\frac{\omega_0}{z_0})^2\frac{t_c}{t_{D1}}})^{\frac{1}{2}}+(1-x_1)(\frac{1}{1+\frac{t_c}{t_{D2}}})(\frac{1}{1+(\frac{\omega_0}{z_0})^2\frac{t_c}{t_{D2}}})^{\frac{1}{2}}]\\
-		&\cdot[1+K_Te^{-\frac{t_c}{t_T}}+K_Re^{-k_Rt_c}]
+		G(t_c)&=1+\frac{1}{N_{eff}}\biggl[x_1\biggl(\frac{1}{1+\frac{t_c}{t_{D1}}}\biggr)\biggl(\frac{1}{1+(\frac{\omega_0}{z_0})^2\frac{t_c}{t_{D1}}}\biggr)^{\frac{1}{2}}+(1-x_1)\biggl(\frac{1}{1+\frac{t_c}{t_{D2}}}\biggr)\biggl(\frac{1}{1+(\frac{\omega_0}{z_0})^2\frac{t_c}{t_{D2}}}\biggr)^{\frac{1}{2}}\biggr]\\
+		&\cdot\biggl[1+K_Te^{-\frac{t_c}{t_T}}+K_Re^{-k_Rt_c}\biggr]
 	\end{split}
 	\end{equation}
+	\begin{table}[H]
+		\caption{Zusammenfassung der Parameter und den zugehörigen Mittelwerten aller Proben.}
+		\label{tab:Parameter}
+		\resizebox{\textwidth}{!}{\begin{tabular}{|c|c|c|c|c|c|c|c|c|l|c|l|}
+				\hline
+				\textbf{Probe} & \textbf{Messung} & offset & \textbf{$N_{eff}$} & \textbf{$t_{D1}$} & \textbf{$\frac{z_0}{\omega_0}$} & \textbf{$t_{D2}$} & \textbf{$x_1$} & \textbf{$K_T$} & \multicolumn{1}{c|}{\textbf{$t_T$}} & \textbf{$K_R$} & \multicolumn{1}{c|}{\textbf{$t_R$}} \\ \hline
+				\multirow{3}{*}{\textbf{\begin{tabular}[c]{@{}c@{}}Rh110\\ in \\ \ch{H2O}\end{tabular}}} & \textbf{1} & 1,00 & 4,31 & 0,191 & 5,55 & 1,38 & 1 & 0,0511 & 3,49E-03 & 0 & 2,06E-05 \\ \cline{2-12} 
+				& \textbf{2} & 1,00 & 4,34 & 0,191 & 5,21 & 1,38 & 1 & 0,0511 & 3,49E-03 & 0 & 2,06E-05 \\ \cline{2-12} 
+				& \textbf{MW} & 1,00 & 4,33 & 0,191 & 5,38 & 1,38 & 1 & 0,0511 & 3,49E-03 & 0 & 2,06E-05 \\ \hline
+				\multirow{3}{*}{\textbf{\begin{tabular}[c]{@{}c@{}}Rh110\\ in \\ Puffer\end{tabular}}} & \textbf{1} & 1,00 & 4,26 & 0,189 & 5,57 & 1,38 & 1 & 0,0493 & 1,81E-03 & 0 & 2,06E-05 \\ \cline{2-12} 
+				& \textbf{2} & 1,00 & 4,31 & 0,189 & 6,42 & 1,38 & 1 & 0,0563 & 2,14E-03 & 0 & 2,06E-05 \\ \cline{2-12} 
+				& \textbf{MW} & 1,00 & 4,29 & 0,189 & 6,00 & 1,38 & 1 & 0,0528 & 1,98E-03 & 0 & 2,06E-05 \\ \hline
+				\multirow{3}{*}{\textbf{\begin{tabular}[c]{@{}c@{}}EGFP\\ in\\ Puffer\end{tabular}}} & \textbf{1} & 1,00 & 3,45 & 0,686 & 6,00 & 1,38 & 1 & 0,295 & 2,57E-03 & 0,435 & 1,60E-05 \\ \cline{2-12} 
+				& \textbf{2} & 1,01 & 3,20 & 0,701 & 6,00 & 1,38 & 1 & 0,243 & 4,13E-03 & 0,199 & 1,77E-04 \\ \cline{2-12} 
+				& \textbf{MW} & 1,00 & 3,32 & 0,694 & 6,00 & 1,38 & 1 & 0,269 & 3,35E-03 & 0,317 & 9,66E-05 \\ \hline
+				\multirow{3}{*}{\textbf{\begin{tabular}[c]{@{}c@{}}EGFP +\\ Rh110\\ in Puffer\end{tabular}}} & \textbf{1} & 1,00 & 3,38 & 0,189 & 6,00 & 0,694 & 0,619 & 0,146 & 2,38E-03 & 0,131 & 3,82E-05 \\ \cline{2-12} 
+				& \textbf{2} & 1,00 & 3,11 & 0,189 & 6,00 & 0,694 & 0,636 & 0,125 & 3,21E-03 & 0,120 & 6,71E-05 \\ \cline{2-12} 
+				& \textbf{MW} & 1,00 & 3,24 & 0,189 & 6,00 & 0,694 & 0,627 & 0,136 & 2,79E-03 & 0,126 & 5,27E-05 \\ \hline
+				\multirow{3}{*}{\textbf{\begin{tabular}[c]{@{}c@{}}Alexa-488\\ in \\ Puffer\end{tabular}}} & \textbf{1} & 1,00 & 4,22 & 1,425 & 6,00 & 1,38 & 1 & 0,140 & 6,08E-02 & 0,119 & 4,03E-04 \\ \cline{2-12} 
+				& \textbf{2} & 1,01 & 4,33 & 1,381 & 6,00 & 1,38 & 1 & 0,117 & 9,72E-03 & 0,193 & 2,91E-05 \\ \cline{2-12} 
+				& \textbf{MW} & 1,00 & 4,27 & 1,403 & 6,00 & 1,38 & 1 & 0,129 & 3,52E-02 & 0,156 & 2,16E-04 \\ \hline
+				\multirow{3}{*}{\textbf{\begin{tabular}[c]{@{}c@{}}Alexa-488\\ + Rh110\\ in Puffer\end{tabular}}} & \textbf{1} & 1,00 & 2,55 & 0,189 & 6,00 & 1,64 & 0,543 & 0,0596 & 3,42E-03 & 0,0402 & 4,40E-05 \\ \cline{2-12} 
+				& \textbf{2} & 1,00 & 2,65 & 0,189 & 6,00 & 1,59 & 0,434 & 0,0591 & 4,62E-03 & 0,0348 & 3,45E-04 \\ \cline{2-12} 
+				& \textbf{MW} & 1,00 & 2,60 & 0,189 & 6,00 & 1,62 & 0,489 & 0,0594 & 4,02E-03 & 0,0375 & 1,95E-04 \\ \hline
+		\end{tabular}}
+	\end{table}
 	\subsection{Graphische Darstellung und visuelle Analyse der Messungen durch Normierung}
 	\subsubsection{Normierung auf die Konzentration und die Basislinie}
 	\subsection{Abschätzung der Größe des Detektionsvolumens}
